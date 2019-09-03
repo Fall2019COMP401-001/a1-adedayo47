@@ -22,7 +22,8 @@ public class A1Novice {
 				double price = scan.nextDouble();
 				total += (itemNum * price);
 			}
-			System.out.println(firstInt + ". " + lastName + ": " + total); 
+			String getTotal = String.format("%.2f", total);
+			System.out.println(firstInt + ". " + lastName + ": " + getTotal); 
 		}
 		scan.close();
 	}
